@@ -7,6 +7,11 @@ const BookList = () => { // contains books
   return (
     <section className='booklist'>
       <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
     </section>
   )
 }
