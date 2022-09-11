@@ -24,6 +24,17 @@ body {
     padding: 1rem 2rem;
 }
 
+/** BOOK IMAGE 
+
+.book img {
+    width: auto;
+    height: 50%;
+}
+
+*/
+
+
+
 /** BOOK TITLE */
 .book h1 {
     color: #617d98;
