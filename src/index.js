@@ -27,11 +27,12 @@ const BookList = () => { // contains books
 }
 
 const Book = (props) => {
+  const {image, title, author} = props
   return (
     <section className='book'>
-      <img src={props.image} alt='img'/>
-      <h2>{props.title}</h2>
-      <h1>By: {props.author}</h1>
+      <img src={image} alt='img'/>
+      <h2>{title}</h2>
+      <h1>By: {author}</h1>
     </section>
   )
 }
