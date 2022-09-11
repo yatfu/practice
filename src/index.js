@@ -21,11 +21,13 @@ const BookList = () => { // contains books
   return (
     <section className='booklist'>
       <Book image={firstBook.image} title={firstBook.title} author={firstBook.author}/>
-      <Book image={secondBook.image} title={secondBook.title} author={secondBook.author}/>
+      <Book image={secondBook.image} title={secondBook.title} author={secondBook.author}>lorem</Book>
+
     </section>
   )
 }
-
+// PROPS: image, title, author
+// note: children prop accesses in between of html
 const Book = (props) => {
   const {image, title, author} = props
   return (
