@@ -6,11 +6,13 @@ import './index.css';
 // VARS SETUP
 const books = [
   {
+    id:1,
     image: 'https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/A1Bw-ZraGJL._AC_US218_..jpg',
     title: 'Carrie Soto Is Back: A Novel',
     author: 'Taylor Jenkins Reid'
   },
   {
+    id:2,
     image: 'https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81B3NH2-s8L._AC_US218_..jpg',
     title: 'One True Loves: A Novel',
     author: 'Taylor Jenkins Reid' 
@@ -24,7 +26,7 @@ const BookList = () => { // contains books
   return (
     <section className='booklist'>
       {books.map((book) => {
-        return <Book book={book}/>
+        return <Book key={book.id} {...book}/>
       })}
     </section>
   )
@@ -32,7 +34,7 @@ const BookList = () => { // contains books
 // PROPS: image, title, author
 // note: children prop accesses in between of html
 const Book = (props) => {
-  const {image, title, author} = props.book
+  const {image, title, author} = props
   return (
     <section className='book'>
       <img src={image} alt='img'/>
