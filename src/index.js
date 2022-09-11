@@ -19,20 +19,17 @@ const BookList = () => { // contains books
 const Book = () => {
   return (
     <section className='book'>
-      <Image />
-      <h2><Title /></h2>
-      <h1>By: {<Author />}</h1>
+      <img src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/I/51W5Kgv0MgL._AC_SX184_.jpg' alt='img'/>
+      <h2>Carrie Soto Is Back: A Novel</h2>
+      <h1>By: Taylor Jenkins Reid</h1>
     </section>
   )
 }
 
+/** stopped using these parts from tutorial ---
 const Title = () => 'Carrie Soto Is Back: A Novel'
-
-const Image = () => (
-  <img src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/I/51W5Kgv0MgL._AC_SX184_.jpg' alt='img'/>
-)
-
-const Author = () => 'Taylor Jenkins Reid'
+const Image = () => (<img src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/I/51W5Kgv0MgL._AC_SX184_.jpg' alt='img'/>)
+const Author = () => 'Taylor Jenkins Reid' **/
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<BookList />)
