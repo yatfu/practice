@@ -17,11 +17,14 @@ const BookList = () => { // contains books
 }
 
 const Book = () => {
+  const image = 'https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/I/51W5Kgv0MgL._AC_SX184_.jpg'
+  const title = 'Carrie Soto Is Back: A Novel'
+  const author = 'Taylor Jenkins Reid'
   return (
     <section className='book'>
-      <img src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/I/51W5Kgv0MgL._AC_SX184_.jpg' alt='img'/>
-      <h2>Carrie Soto Is Back: A Novel</h2>
-      <h1>By: Taylor Jenkins Reid</h1>
+      <img src={image} alt='img'/>
+      <h2>{title}</h2>
+      <h1>By: {author}</h1>
     </section>
   )
 }
